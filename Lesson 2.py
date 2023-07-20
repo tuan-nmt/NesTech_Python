@@ -221,4 +221,44 @@ arr2 = np.array(3)
 # print(arr)
 
 
+# # Hàm mô phỏng việc tung đồng xu và đi trên đường
+# def simulate():
+#     position = 0
+#     for i in range(100):
+#         if np.random.random() < 0.5:
+#             position += 1
+#         else:
+#             position -= 1
+#     return position
+
+# # Hàm tính xác suất anh ta tiến được 30 bước
+# def calculate_probability(n_trials):
+#     count = 0
+#     for i in range(n_trials):
+#         if simulate() >= 30:
+#             count += 1
+#     return count / n_trials
+
+# # Thực hiện tính xác suất
+# print("Xác suất anh ta tiến được 30 bước:", calculate_probability(10000))
+
+
+
+# ---------------Pandas---------------
+import pandas as pd 
+
+ser = pd.Series(['A', 'B', 'C', 'D', 'E'], index=[1, 2, 3, 4 , 5])
+print(ser)
+
+sdata = {'Ohio': 35000, 'Texas': 71000, 'Oregon': 16000, 'Utah': 5000}
+ser2 = pd.Series(sdata)
+print(ser2)
+
+ser2 = pd.Series(sdata, index=["Ohio", "Texas", "Cali"])
+print(ser2)
+
+
+
+
+
 
